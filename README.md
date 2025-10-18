@@ -1,0 +1,79 @@
+# README
+We provide the source code and pre-trained models for evaluating the performance of DUMoE on Compressive Imaging (CI) tasks, including natural Image Compressive Sensing (ICS), CS Magnetic Resonance Imaging (CS-MRI), and Snapshot Compressive Imaging (SCI).
+
+Please refer to the README.md file in each folder for more details.
+
+## Structure
+```
+├── README.md
+├── requirements.txt
+└── 1.DUMoE_ICS/
+    ├── README.md
+    ├── main_test.py
+    ├── moe_duns.py
+    ├── register_models.py
+    └── model/
+        ├── checkpoint-dumoe-1-best.pth
+        ├── checkpoint-dumoe-4-best.pth
+        ├── checkpoint-dumoe-10-best.pth
+        ├── checkpoint-dumoe-25-best.pth
+        ├── checkpoint-dumoe-30-best.pth
+        ├── checkpoint-dumoe-40-best.pth
+        ├── checkpoint-dumoe-50-best.pth
+    └── data/
+        └── sampling_matrix/
+            ├── 1_32.npy    
+            ├── 4_32.npy    
+            ├── 10_32.npy   
+            ├── 25_32.npy   
+            ├── 30_32.npy   
+            ├── 40_32.npy   
+            ├── 50_32.npy   
+        └── test/
+            ├── Set14
+            ├── README.md
+└── 2.DUMoE_CSMRI/
+    ├── README.md
+    ├── main_test.py
+    ├── moe_duns.py
+    ├── register_models.py
+    └── model/
+        ├── checkpoint-dumoe-10-best.pth
+    └── data/
+        └── mask/
+            └── 256/
+                ├── README.md
+        └── test/
+            ├── README.md
+└── 3.DUMoE_SCI/
+    └── sim/
+        └── test_code/
+            ├── README.md
+            ├── main_test.py
+            ├── utils.py
+            ├── option.py
+            ├── template.py
+            ├── ssim_torch.py
+            └── architecture/
+                ├── __init__.py
+                ├── moe_duns.py
+            └── model/
+                ├── dumoe_sci_sim.pth
+            └── data/
+                └── SCI/
+                    ├── README.md
+    └── real/
+        └── test_code/
+            ├── README.md
+            ├── main_test.py
+            ├── option.py
+            ├── template.py
+            └── architecture/
+                ├── __init__.py
+                ├── moe_duns.py
+            └── model/
+                ├── dumoe_sci_real.pth
+            └── data/
+                └── SCI/
+                    ├── README.md
+```
