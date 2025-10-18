@@ -13,13 +13,7 @@ Please refer to the README.md file in each folder for more details.
     ├── moe_duns.py
     ├── register_models.py
     └── model/
-        ├── checkpoint-dumoe-1-best.pth
-        ├── checkpoint-dumoe-4-best.pth
         ├── checkpoint-dumoe-10-best.pth
-        ├── checkpoint-dumoe-25-best.pth
-        ├── checkpoint-dumoe-30-best.pth
-        ├── checkpoint-dumoe-40-best.pth
-        ├── checkpoint-dumoe-50-best.pth
     └── data/
         └── sampling_matrix/
             ├── 1_32.npy    
